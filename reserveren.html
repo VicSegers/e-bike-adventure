@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-bike adventure</title>
+  <link rel="stylesheet" id="Laila-css" href="https://fonts.googleapis.com/css?family=Laila%3A1%2C300%2C400%2C400italic%2C700&amp;ver=5.5.1" type="text/css" media="all">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="niceDatePicker/nice-date-picker.css" />
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body class="m-auto">
+  <header class="h-25">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light px-5 justify-content-between fixed-top m-auto">
+      <a class="navbar-brand" href="index.html">
+        <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-bootstrap-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M4.002 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4h-8zm1.06 12h3.475c1.804 0 2.888-.908 2.888-2.396 0-1.102-.761-1.916-1.904-2.034v-.1c.832-.14 1.482-.93 1.482-1.816 0-1.3-.955-2.11-2.542-2.11H5.062V12zm1.313-4.875V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762h1.898c1.184 0 1.81-.48 1.81-1.377 0-.885-.65-1.348-1.886-1.348H6.375v2.725z"/>
+        </svg>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse ml-auto" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto text-right font-weight-bold">
+          <a class="nav-item nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="#">Cadeaubon</a>
+          <a class="nav-item nav-link active" href="reserveren.html">Reserveren</a>
+          <a class="nav-item nav-link" href="#">Voertuigen en prijzen</a>
+          <a class="nav-item nav-link" href="#">B2B</a>
+          <a class="nav-item nav-link" href="#">Routes</a>
+          <a class="nav-item nav-link" href="#">Verkoop</a>
+          <a class="nav-item nav-link" href="#">Contact</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="p-4">
+      <div class="list-group flex-row mb-3" id="list-tab" role="tablist">
+        <a class="list-group-item color-gray active col-6" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Verhuur fiets</a>
+        <a class="list-group-item color-gray col-6" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Offerte B2B (minstens 12 fietsen)</a>
+      </div>
+      <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+          <h5 class="text-center">Reservatie</h5>
+          <form class="row">
+            <div class="form-group required my-2 col-12 col-sm-6 col-md-6 col-lg-4">
+              <label for="firstNameInput">Voornaam</label>
+              <input type="text" class="form-control" id="firstNameInput" name="firstName" required />
+            </div>
+            <div class="form-group required my-2 col-12 col-sm-6 col-md-6 col-lg-4">
+              <label for="surnameInput">Achternaam</label>
+              <input type="text" class="form-control" id="surnameInput" name="surname" required />
+            </div>
+            <div class="form-group required my-2 col-12 col-sm-6 col-md-6 col-lg-4">
+              <label for="adresInput">Straat + nummer</label>
+              <input type="text" class="form-control" id="adresInput" name="adres" required />
+            </div>
+            <div class="form-group required my-2 col-12 col-sm-6 col-md-6 col-lg-4">
+              <label for="postalCodeInput">Postcode</label>
+              <input type="text" class="form-control" id="postalCodeINput" name="postalCode" required />
+            </div>
+            <div class="form-group required my-2 col-12 col-sm-6 col-md-6 col-lg-4">
+              <label for="locationInput">Plaats</label>
+              <input type="text" class="form-control" id="locationInput" name="location" required />
+            </div>
+            <div class="form-group required my-2 col-12 col-sm-6 col-md-6 col-lg-4">
+              <label for="phoneNumberInput">Telefoonnummer</label>
+              <input type="tel" class="form-control" id="phoneNumberInput" name="phoneNumber" required />
+            </div>
+            <div class="form-group required my-2 col-12 col-sm-6 col-md-6 col-lg-4">
+              <label for="emailInput">E-mailadres</label>
+              <input type="email" class="form-control" id="emailInput" name="email" required />
+            </div>
+            <hr />
+            <div class="form-group my-2 col-12 col-sm-12 col-md-6 col-lg-4">
+              <label for="couponInput">Cadeaubonnummer</label>
+              <input type="text" class="form-control" id="couponInput" name="coupon" />
+            </div>
+            <hr class="my-2" />
+            <div class="my-2 col-12 col-sm-12 col-md-6 col-lg-6 px-0" id="calendar"></div>
+            <div class="my-2 col-12 col-sm-12 col-md-6 col-lg-6 row m-auto" id="calendar-msg"></div>
+            <hr class="my-2" />
+            <div class="form-group my-2 col-12">
+              <label for="remarkTextarea">Opmerkingen of vragen</label>
+              <textarea type="text" class="form-control" id="remarkTextarea" name="remarks" rows="4"></textarea>
+            </div>
+            <div class="container my-2 d-flex justify-content-center">
+              <button type="submit" class="btn btn-primary m-auto">Versturen</button>
+            </div>
+          </form>
+        </div>
+        <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list"></div>
+      </div>
+    </section>
+  </main>
+  <!-- <footer class="page-footer small pt-4">
+  </div>
+    <div class="footer-copyright py-3">©2020 E-bike adventure, adres | Website door Vic Segers</div>
+  </footer> -->
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="niceDatePicker/nice-date-picker.js"></script>
+  <script src="scripts/calendar.js"></script>
+</body>
+</html>
