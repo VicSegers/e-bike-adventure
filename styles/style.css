@@ -1,0 +1,45 @@
+.bg-blue {
+  background-color: #2991d6;
+}
+
+.bg-red {
+  background-color: #f3dcdc;
+}
+
+.bg-gray {
+  background-color: #f4f4f4;
+}
+
+.color-gray {
+  color: #495057;
+}
+
+body {
+  font-family: "Laila", Arial, Tahoma, sans-serif;
+  font-weight: 300;
+}
+
+body, nav {
+  max-width: 1240px;
+}
+
+header {
+  margin-top: 66px;
+}
+
+form div.form-group.required label:after {
+  content: '*';
+  color: red;
+}
+
+@media only screen and (max-width: 690px) {
+  a.list-group-item.list-group-item-action {
+    text-align: center !important;
+  }
+}
+
+/* @media (prefers-color-scheme: dark) {
+  html {
+    filter: invert(1) hue-rotate(180deg);
+  }
+} */
