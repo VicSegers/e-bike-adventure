@@ -3,16 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>E-bike adventure</title>
+  <title>Home - E-bike Adventure</title>
+  <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png" />
+  <link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="images/favicon/manifest.json" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png" />
+  <meta name="theme-color" content="#ffffff" />
   <link rel="stylesheet" id="Laila-css" href="https://fonts.googleapis.com/css?family=Laila%3A1%2C300%2C400%2C400italic%2C700&amp;ver=5.5.1" type="text/css" media="all">
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
   <link rel="stylesheet" href="styles/style.css" />
 </head>
-<body class="m-auto">
-  <header class="h-25">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light px-5 justify-content-between fixed-top m-auto">
-      <a class="navbar-brand" href="#">
-        <img style="height:3em" src="assets/logos/rayvolt-logo.png" alt="Rayvolts logo" />
+<body class="m-auto bg-black text-light">
+  <header class="w-100">
+    <nav class="w-100 navbar navbar-expand-md navbar-dark px-5 justify-content-between fixed-top m-auto bg-black">
+      <a class="navbar-brand mr-auto" href="#">
+        <img id="logo" src="assets/logos/e-bike-adventure-logo.jpeg" alt="E-bike Adventure logo" />
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -22,189 +39,126 @@
           <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
           <a class="nav-item nav-link" href="reserveren.html">Reserveren</a>
           <a class="nav-item nav-link" href="catalogus.html">Catalogus</a>
-          <a class="nav-item nav-link" href="#">Contact</a>
+          <a class="nav-item nav-link" href="contact.html">Contact</a>
         </div>
       </div>
     </nav>
-    <img class="w-100" src="https://via.placeholder.com/1600x900.png?text=Banner+foto" />
+    <img id="banner" src="assets/images/banner/banner.jpeg" />
   </header>
   <main>
-    <!-- Corona & cadeaubon -->
-    <!-- <section class="p-4">
-      <div class="row justify-content-center">
-        <div class="col-sm-4">
-          <div class="bg-blue text-white p-3 rounded">
-            <h3>Corona maatregelen</h3>
-            <ul class="list-group">
-              <li class="list-group-item bg-blue px-0 border-0">
-                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
-                </svg>
-                handgel
-              </li>
-              <li class="list-group-item bg-blue px-0 border-0">
-                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
-                </svg>
-                mondmaskers
-              </li>
-              <li class="list-group-item bg-blue px-0 border-0">
-                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
-                </svg>
-                2 reeksen helmen
-              </li>
-              <li class="list-group-item bg-blue px-0 border-0">
-                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
-                </svg>
-                ontsmetting helmen
-              </li>
-              <li class="list-group-item bg-blue px-0 border-0">
-                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
-                </svg>
-                1 richting
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-1 m-2"></div>
-        <div class="col-sm-4">
-          <div class="text-center p-3 bg-red rounded">
-            <p class="justify-content-cente m-0">
-              <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart-fill d-inline-flex align-self-center" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
-              </svg>
-              Cadeaubon
-            </p>
-          </div>
-        </div>
-      </div>
-    </section> -->
-    <!-- E-Bike Adventure -->
+    <!-- E-bike Adventure -->
     <section class="p-4 text-center">
-      <h2>E-Bike Adventure!</h2>
-      <p>U kunt met z´n tweetjes, familie, vrienden of met collega’s een E-bike huren en wij bezorgen u een gezellige en onvergetelijke dag. 
+      <h2>E-bike Adventure!</h2>
+      <p>U kunt met z'n tweetjes, familie, vrienden of met collega's een E-bike huren en wij bezorgen u een gezellige en onvergetelijke dag. 
         Bij ons kan iedereen mee, groot, klein, jong en oud.
         Zowel de particulier die gewoon een E-bike wil huren maar ook bedrijven vinden bij ons net dat beetje meer.</p>
-      <p>Door onze centrale ligging  kan je kiezen uit 4 speciaal voor E-bikes uitgestippelde rondritten situerend in het glooiende Haspengouw tot de betoverende Voerstreek. Ook voor een teambuilding activiteit of personeelsuitstap ben je bij ons aan het juiste adres. Wij zorgen voor een origineel arrangement op maat.</p>
+      <p>Door onze centrale ligging kan je kiezen uit 4 speciaal voor E-bikes uitgestippelde rondritten situerend in het glooiende Haspengouw tot de betoverende Voerstreek. Ook voor een teambuilding activiteit of personeelsuitstap ben je bij ons aan het juiste adres. Wij zorgen voor een origineel arrangement op maat.</p>
     </section>
     <!-- Populaire routes -->
-    <section class="p-4 text-center bg-gray">
+    <section id="routes" class="p-4 text-center bg-gray">
       <h2>Populaire routes</h2>
       <div class="row justify-content-center">
-        <div class="card col-12 col-sm-12 col-md-3">
-          <img class="card-img-top" src="https://via.placeholder.com/300x200?text=Route+1" />
+        <div class="card col-12 col-sm-11 col-md-5 my-3 bg-black pt-3">
+          <div class="embed-responsive embed-responsive-4by3">
+            <img class="card-img-top embed-responsive-item" src="assets/images/routes/jazz-bilzen.jpeg" />
+          </div>
           <div class="card-body px-0">
-            <h5 class="card-title">Route 1</h5>
-            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit explicabo dolor reprehenderit odio earum voluptatem suscipit ducimus incidunt molestias autem, assumenda neque ullam voluptas non ad voluptatum! Necessitatibus, reprehenderit ab sint id voluptatem aperiam! Eos dolorem reiciendis necessitatibus quisquam voluptas ea veniam mollitia, possimus, explicabo rerum quaerat ut, et delectus.</p>
-            <a href="#" class="btn btn-primary">Route 1</a>
+            <h5 class="card-title mb-0">Jazz Bilzen</h5>
+            <!-- <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit explicabo dolor reprehenderit odio earum voluptatem suscipit ducimus incidunt molestias autem, assumenda neque ullam voluptas non ad voluptatum! Necessitatibus, reprehenderit ab sint id voluptatem aperiam! Eos dolorem reiciendis necessitatibus quisquam voluptas ea veniam mollitia, possimus, explicabo rerum quaerat ut, et delectus.</p> -->
+            <!-- <a href="#" class="btn btn-primary">Route 1</a> -->
           </div>
         </div>
-        <div class="card col-12 col-sm-12 col-md-3 offset-1">
-          <img class="card-img-top" src="https://via.placeholder.com/300x200?text=Route+2" />
+        <div class="card col-12 col-sm-11 col-md-5 offset-md-1 my-3 bg-black pt-3">
+          <div class="embed-responsive embed-responsive-4by3">
+            <img class="card-img-top embed-responsive-item" src="assets/images/routes/limburg-highlights.jpeg" />
+          </div>
           <div class="card-body px-0">
-            <h5 class="card-title">Route 2</h5>
-            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit explicabo dolor reprehenderit odio earum voluptatem suscipit ducimus incidunt molestias autem, assumenda neque ullam voluptas non ad voluptatum! Necessitatibus, reprehenderit ab sint id voluptatem aperiam! Eos dolorem reiciendis necessitatibus quisquam voluptas ea veniam mollitia, possimus, explicabo rerum quaerat ut, et delectus.</p>
-            <a href="#" class="btn btn-primary">Route 1</a>
+            <h5 class="card-title mb-0">Limburg Highlights</h5>
+            <!-- <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit explicabo dolor reprehenderit odio earum voluptatem suscipit ducimus incidunt molestias autem, assumenda neque ullam voluptas non ad voluptatum! Necessitatibus, reprehenderit ab sint id voluptatem aperiam! Eos dolorem reiciendis necessitatibus quisquam voluptas ea veniam mollitia, possimus, explicabo rerum quaerat ut, et delectus.</p> -->
+            <!-- <a href="#" class="btn btn-primary">Route 1</a> -->
           </div>
         </div>
-        <div class="card col-12 col-sm-12 col-md-3 offset-1">
-          <img class="card-img-top" src="https://via.placeholder.com/300x200?text=Route+3" />
+        <div class="card col-12 col-sm-11 col-md-5 my-3 bg-black pt-3">
+          <div class="embed-responsive embed-responsive-4by3">
+            <img class="card-img-top embed-responsive-item" src="assets/images/routes/voeren.jpeg" />
+          </div>
           <div class="card-body px-0">
-            <h5 class="card-title">Route 3</h5>
-            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit explicabo dolor reprehenderit odio earum voluptatem suscipit ducimus incidunt molestias autem, assumenda neque ullam voluptas non ad voluptatum! Necessitatibus, reprehenderit ab sint id voluptatem aperiam! Eos dolorem reiciendis necessitatibus quisquam voluptas ea veniam mollitia, possimus, explicabo rerum quaerat ut, et delectus.</p>
-            <a href="#" class="btn btn-primary">Route 1</a>
+            <h5 class="card-title mb-0">Voeren tour</h5>
+            <!-- <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit explicabo dolor reprehenderit odio earum voluptatem suscipit ducimus incidunt molestias autem, assumenda neque ullam voluptas non ad voluptatum! Necessitatibus, reprehenderit ab sint id voluptatem aperiam! Eos dolorem reiciendis necessitatibus quisquam voluptas ea veniam mollitia, possimus, explicabo rerum quaerat ut, et delectus.</p> -->
+            <!-- <a href="#" class="btn btn-primary">Route 1</a> -->
+          </div>
+        </div>
+        <div class="card col-12 col-sm-11 col-md-5 offset-md-1 my-3 bg-black pt-3">
+          <div class="embed-responsive embed-responsive-4by3">
+            <img class="card-img-top embed-responsive-item" src="assets/images/routes/ambiorix.jpeg" />
+          </div>
+          <div class="card-body px-0">
+            <h5 class="card-title mb-0">Ambiorix route</h5>
+            <!-- <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit explicabo dolor reprehenderit odio earum voluptatem suscipit ducimus incidunt molestias autem, assumenda neque ullam voluptas non ad voluptatum! Necessitatibus, reprehenderit ab sint id voluptatem aperiam! Eos dolorem reiciendis necessitatibus quisquam voluptas ea veniam mollitia, possimus, explicabo rerum quaerat ut, et delectus.</p> -->
+            <!-- <a href="#" class="btn btn-primary">Route 1</a> -->
           </div>
         </div>
       </div>
     </section>
-    <!-- Onze voertuigen -->
-    <!-- <section class="p-4 text-center">
-      <h2>Onze voertuigen</h2>
-      <div class="row">
-        <div class="col-12 col-sm-12 col-md-4">
-          <div class="list-group" id="list-tab" role="tablist">
-            <a class="list-group-item list-group-item-action text-left active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Vespa 50cc</a>
-            <a class="list-group-item list-group-item-action text-left" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Vespa 125cc</a>
-            <a class="list-group-item list-group-item-action text-left" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Vespa GTS125 - 300cc</a>
-            <a class="list-group-item list-group-item-action text-left" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">E-Moke</a>
-          </div>
-        </div>
-        <div class="col-12 col-sm-12 col-md-8">
-          <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
-              <div class="row">
-                <div class="col-6">
-                  <img class="w-100" src="https://via.placeholder.com/300x200?text=Vespa+50cc" />
-                </div>
-                <p class="col-6">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa accusamus, tempora explicabo sed distinctio quo harum dolore est soluta repellat eos impedit, perferendis, consequuntur ratione cupiditate vel deserunt error dolores?
-                </p>
-              </div>
-            </div>
-            <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
-              <div class="row">
-                <div class="col-6">
-                  <img class="w-100" src="https://via.placeholder.com/300x200?text=Vespa+125cc" />
-                </div>
-                <p class="col-6">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa accusamus, tempora explicabo sed distinctio quo harum dolore est soluta repellat eos impedit, perferendis, consequuntur ratione cupiditate vel deserunt error dolores?
-                </p>
-              </div>
-            </div>
-            <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
-              <div class="row">
-                <div class="col-6">
-                  <img class="w-100" src="https://via.placeholder.com/300x200?text=Vespa+GTS125+-+300cc" />
-                </div>
-                <p class="col-6">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa accusamus, tempora explicabo sed distinctio quo harum dolore est soluta repellat eos impedit, perferendis, consequuntur ratione cupiditate vel deserunt error dolores?
-                </p>
-              </div>
-            </div>
-            <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
-              <div class="row">
-                <div class="col-6">
-                  <img class="w-100" src="https://via.placeholder.com/300x200?text=E-Moke" />
-                </div>
-                <p class="col-6">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa accusamus, tempora explicabo sed distinctio quo harum dolore est soluta repellat eos impedit, perferendis, consequuntur ratione cupiditate vel deserunt error dolores?
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
     <!-- Enkele sfeerbeelden -->
-    <section class="pt-4 text-center">
+    <section id="ambiance" class="pt-4 text-center">
       <h2>Enkele sfeerbeelden</h2>
-      <div class="row w-100 m-0">
-        <img class="col-12 col-sm-6 col-md-3 p-0" src="https://via.placeholder.com/300?text=Foto+1" />
-        <img class="col-12 col-sm-6 col-md-3 p-0" src="https://via.placeholder.com/300?text=Foto+2" />
-        <img class="col-12 col-sm-6 col-md-3 p-0" src="https://via.placeholder.com/300?text=Foto+3" />
-        <img class="col-12 col-sm-6 col-md-3 p-0" src="https://via.placeholder.com/300?text=Foto+4" />
-        <img class="col-12 col-sm-6 col-md-3 p-0" src="https://via.placeholder.com/300?text=Foto+5" />
-        <img class="col-12 col-sm-6 col-md-3 p-0" src="https://via.placeholder.com/300?text=Foto+6" />
-        <img class="col-12 col-sm-6 col-md-3 p-0" src="https://via.placeholder.com/300?text=Foto+7" />
-        <img class="col-12 col-sm-6 col-md-3 p-0" src="https://via.placeholder.com/300?text=Foto+8" />
+      <div class="row w-100 mx-0 mt-4">
+        <div class="col-12 col-sm-6 col-md-3 p-0">
+          <div class="embed-responsive embed-responsive-4by3">
+            <img class="w-100 embed-responsive-item" src="assets/images/ambiance/restaurant.jpeg" />
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 p-0">
+          <div class="embed-responsive embed-responsive-4by3">
+            <img class="w-100 embed-responsive-item" src="assets/images/ambiance/water-side.jpeg" />
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 p-0">
+          <div class="embed-responsive embed-responsive-4by3">
+            <img class="w-100 embed-responsive-item" src="assets/images/ambiance/corn.jpeg" />
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 p-0">
+          <div class="embed-responsive embed-responsive-4by3">
+            <img class="w-100 embed-responsive-item" src="assets/images/ambiance/bridge-girl.jpeg" />
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 p-0">
+          <div class="embed-responsive embed-responsive-4by3">
+            <img class="w-100 embed-responsive-item" src="assets/images/ambiance/truck.jpeg" />
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 p-0">
+          <div class="embed-responsive embed-responsive-4by3">
+            <img class="w-100 embed-responsive-item" src="assets/images/ambiance/show.jpeg" />
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 p-0">
+          <div class="embed-responsive embed-responsive-4by3">
+            <img class="w-100 embed-responsive-item" src="assets/images/ambiance/camping.jpeg" />
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 p-0">
+          <div class="embed-responsive embed-responsive-4by3">
+            <img class="w-100 embed-responsive-item" src="assets/images/ambiance/under-bridge.jpeg" />
+          </div>
+        </div>
       </div>
     </section>
   </main>
-  <footer class="page-footer py-4 small bg-blue row w-100 m-0">
-    <div class="mb-1 text-center col-md-4 col-sm-12 col-12">©2020 E-bike adventure</div>
+  <footer class="page-footer py-4 small bg-gray row w-100 m-0">
+    <div class="mb-1 text-center col-md-4 col-sm-12 col-12">©2020 E-bike Adventure</div>
     <div class="mb-1 text-center col-md-4 col-sm-12 col-12">Bremakker 4, 3740 Bilzen</div>
     <div class="mb-1 text-center col-md-4 col-sm-12 col-12">Website gemaakt door Vic Segers</div>
     <div class="mt-3 text-center col-12">
-      <a href="https://www.facebook.com/ebikeadventure.be" target="_blank" class="mx-2">
-        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#212529">
+      <a href="https://www.facebook.com/ebikeadventure.be" target="_blank" class="mx-2 text-decoration-none">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#f8f9fa">
           <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>
         </svg>
       </a>
-      <a href="https://www.instagram.com/ebikeadventure.be/" target="_blank" class="mx-2">
-        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#212529">
+      <a href="https://www.instagram.com/ebikeadventure.be/" target="_blank" class="mx-2 text-decoration-none">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#f8f9fa">
           <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
         </svg>
       </a>
