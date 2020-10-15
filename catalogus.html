@@ -3,16 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>E-bike adventure</title>
+  <title>Catalogus - E-bike Adventure</title>
+  <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png" />
+  <link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="images/favicon/manifest.json" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png" />
+  <meta name="theme-color" content="#ffffff" />
   <link rel="stylesheet" id="Laila-css" href="https://fonts.googleapis.com/css?family=Laila%3A1%2C300%2C400%2C400italic%2C700&amp;ver=5.5.1" type="text/css" media="all">
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
   <link rel="stylesheet" href="styles/style.css" />
 </head>
-<body class="m-auto">
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light px-5 justify-content-between fixed-top m-auto">
-      <a class="navbar-brand" href="index.html">
-        <img style="height:3em" src="assets/logos/rayvolt-logo.png" alt="Rayvolts logo" />
+<body class="m-auto bg-black text-light">
+  <header class="w-100">
+    <nav class="w-100 navbar navbar-expand-md navbar-dark px-5 justify-content-between fixed-top m-auto bg-black">
+      <a class="navbar-brand mr-auto" href="index.html">
+        <img id="logo" src="assets/logos/e-bike-adventure-logo.jpeg" alt="E-bike Adventure logo" />
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -21,225 +38,272 @@
         <div class="navbar-nav ml-auto text-right font-weight-bold">
           <a class="nav-item nav-link" href="index.html">Home</a>
           <a class="nav-item nav-link" href="reserveren.html">Reserveren</a>
-          <a class="nav-item nav-link active" href="catalogus.html">Catalogus <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link active" href="#">Catalogus <span class="sr-only">(current)</span></a>
           <a class="nav-item nav-link" href="contact.html">Contact</a>
         </div>
       </div>
     </nav>
   </header>
   <main class="p-4">
-    <div class="m-0 w-100 row justify-content-center">
-      <!-- Clubman -->
-      <div class="card col-lg-5 col-md-12 col-sm-12 my-3">
-        <div id="clubmanCarousel" class="card-img-top carousel slide" data-ride="carousel" data-interval="false">
-          <div class="carousel-inner">
+    <section>
+      <h2 class="text-center">Catalogus</h2>
+      <div class="m-0 w-100 row justify-content-center">
+        <!-- Clubman -->
+        <div class="card col-lg-5 col-md-12 col-sm-12 my-3 bg-gray pt-3">
+          <div id="clubmanCarousel" class="card-img-top carousel slide" data-ride="carousel" data-interval="false">
+            <div class="carousel-inner">
+              <ol class="carousel-indicators">
+                <li data-target="#clubmanCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#clubmanCarousel" data-slide-to="1"></li>
+                <li data-target="#clubmanCarousel" data-slide-to="2"></li>
+                <li data-target="#clubmanCarousel" data-slide-to="3"></li>
+              </ol>
+              <div class="carousel-item embed-responsive embed-responsive-16by9 active">
+                <div class="embed-responsive-item">
+                  <img class="w-100" src="assets/images/bikes/clubman/clubman1.png" alt="Eerste foto van de Clubman">
+                </div>
+              </div>
+              <div class="carousel-item embed-responsive embed-responsive-16by9">
+                <div class="embed-responsive-item">
+                  <img class="w-100" src="assets/images/bikes/clubman/clubman2.png" alt="Tweede foto van de Clubman">
+                </div>
+              </div>
+              <div class="carousel-item embed-responsive embed-responsive-16by9">
+                <div class="embed-responsive-item">
+                  <img class="w-100" src="assets/images/bikes/clubman/clubman3.png" alt="Derde foto van de Clubman">
+                </div>
+              </div>
+              <div class="carousel-item embed-responsive embed-responsive-16by9">
+                <div class="embed-responsive-item">
+                  <img class="w-100" src="assets/images/bikes/clubman/clubman4.png" alt="Vierde foto van de Clubman">
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#clubmanCarousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#clubmanCarousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Clubman</h5>
+            <p class="card-text">Vanaf €1999</p>
+            <a href="https://www.rayvoltbike.com/product/clubman/" target="_blank" class="btn text-light bg-red">Specificaties</a>
+          </div>
+        </div>
+        <!-- Cruzer -->
+        <div class="card col-lg-5 offset-lg-1 col-md-12 col-sm-12 my-3 bg-gray pt-3">
+          <div id="cruzerCarousel" class="card-img-top carousel slide" data-ride="carousel" data-interval="false">
+            <div class="carousel-inner">
+              <ol class="carousel-indicators">
+                <li data-target="#cruzerCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#cruzerCarousel" data-slide-to="1"></li>
+                <li data-target="#cruzerCarousel" data-slide-to="2"></li>
+                <li data-target="#cruzerCarousel" data-slide-to="3"></li>
+              </ol>
+              <div class="carousel-item embed-responsive embed-responsive-16by9 active">
+                <div class="embed-responsive-item">
+                  <img class="w-100" src="assets/images/bikes/cruzer/cruzer1.png" alt="Eerste foto van de Cruzer">
+                </div>
+              </div>
+              <div class="carousel-item embed-responsive embed-responsive-16by9">
+                <div class="embed-responsive-item">
+                  <img class="w-100" src="assets/images/bikes/cruzer/cruzer2.jpg" alt="Tweede foto van de Cruzer">
+                </div>
+              </div>
+              <div class="carousel-item embed-responsive embed-responsive-16by9">
+                <div class="embed-responsive-item">
+                  <img class="w-100" src="assets/images/bikes/cruzer/cruzer3.png" alt="Derde foto van de Cruzer">
+                </div>
+              </div>
+              <div class="carousel-item embed-responsive embed-responsive-16by9">
+                <div class="embed-responsive-item">
+                  <img class="w-100" src="assets/images/bikes/cruzer/cruzer4.png" alt="Vierde foto van de Cruzer">
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#cruzerCarousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#cruzerCarousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Cruzer</h5>
+            <p class="card-text">Vanaf €2800</p>
+            <a href="https://www.rayvoltbike.com/product/cruzer/" target="_blank" class="btn text-light bg-red">Specificaties</a>
+          </div>
+        </div>
+        <!-- Torino -->
+        <div class="card col-lg-5 col-md-12 col-sm-12 my-3 bg-gray pt-3">
+          <div id="torinoCarousel" class="card-img-top carousel slide" data-ride="carousel" data-interval="false">
+            <div class="carousel-inner">
+              <ol class="carousel-indicators">
+                <li data-target="#torinoCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#torinoCarousel" data-slide-to="1"></li>
+                <li data-target="#torinoCarousel" data-slide-to="2"></li>
+                <li data-target="#torinoCarousel" data-slide-to="3"></li>
+              </ol>
+              <div class="carousel-item embed-responsive embed-responsive-16by9 active">
+                <div class="embed-responsive-item">
+                  <img class="w-100" src="assets/images/bikes/torino/torino1.png" alt="Eerste foto van de Torino">
+                </div>
+              </div>
+              <div class="carousel-item embed-responsive embed-responsive-16by9">
+                <div class="embed-responsive-item">
+                  <img class="w-100" src="assets/images/bikes/torino/torino2.png" alt="Tweede foto van de Torino">
+                </div>
+              </div>
+              <div class="carousel-item embed-responsive embed-responsive-16by9">
+                <div class="embed-responsive-item">
+                  <img class="w-100" src="assets/images/bikes/torino/torino3.png" alt="Derde foto van de Torino">
+                </div>
+              </div>
+              <div class="carousel-item embed-responsive embed-responsive-16by9">
+                <div class="embed-responsive-item">
+                  <img class="w-100" src="assets/images/bikes/torino/torino4.png" alt="Vierde foto van de Torino">
+                </div>
+              </div>
+              <div class="carousel-item embed-responsive embed-responsive-16by9">
+                <div class="embed-responsive-item">
+                  <img class="w-100" src="assets/images/bikes/torino/torino5.png" alt="Vijfde foto van de Torino">
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#torinoCarousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#torinoCarousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Torino</h5>
+            <p class="card-text">Vanaf €2850</p>
+            <a href="https://www.rayvoltbike.com/product/torino/" target="_blank" class="btn text-light bg-red">Specificaties</a>
+          </div>
+        </div>
+        <!-- Beachin' -->
+        <div class="card col-lg-5 offset-lg-1 col-md-12 col-sm-12 my-3 bg-gray pt-3">
+          <div id="beachinCarousel" class="card-img-top carousel slide" data-ride="carousel" data-interval="false">
             <ol class="carousel-indicators">
-              <li data-target="#clubmanCarousel" data-slide-to="0" class="active"></li>
-              <li data-target="#clubmanCarousel" data-slide-to="1"></li>
-              <li data-target="#clubmanCarousel" data-slide-to="2"></li>
-              <li data-target="#clubmanCarousel" data-slide-to="3"></li>
+              <li data-target="#beachinCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#beachinCarousel" data-slide-to="1"></li>
+              <li data-target="#beachinCarousel" data-slide-to="2"></li>
+              <li data-target="#beachinCarousel" data-slide-to="3"></li>
             </ol>
-            <div class="carousel-item active">
-              <img class="d-block w-100" src="assets/images/bikes/clubman/clubman1.png" alt="Eerste foto van de Clubman">
+            <div class="carousel-inner">
+              <div class="carousel-item embed-responsive embed-responsive-16by9 active">
+                <div class="embed-responsive-item">
+                  <img class="w-100" src="assets/images/bikes/beachin/beachin1.png" alt="Eerste foto van de Beachn'">
+                </div>
+              </div>
+              <div class="carousel-item embed-responsive embed-responsive-16by9">
+                <div class="embed-responsive-item">
+                  <img class="w-100" src="assets/images/bikes/beachin/beachin2.png" alt="Tweede foto van de Beachn'">
+                </div>
+              </div>
+              <div class="carousel-item embed-responsive embed-responsive-16by9">
+                <div class="embed-responsive-item">
+                  <img class="w-100" src="assets/images/bikes/beachin/beachin3.png" alt="Derde foto van de Beachn'">
+                </div>
+              </div>
+              <div class="carousel-item embed-responsive embed-responsive-16by9">
+                <div class="embed-responsive-item">
+                  <img class="w-100" src="assets/images/bikes/beachin/beachin4.png" alt="Vierde foto van de Beachn'">
+                </div>
+              </div>
             </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="assets/images/bikes/clubman/clubman2.png" alt="Tweede foto van de Clubman">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="assets/images/bikes/clubman/clubman3.png" alt="Derde foto van de Clubman">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="assets/images/bikes/clubman/clubman4.png" alt="Vierde foto van de Clubman">
-            </div>
+            <a class="carousel-control-prev" href="#beachinCarousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#beachinCarousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
           </div>
-          <a class="carousel-control-prev" href="#clubmanCarousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#clubmanCarousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
+          <div class="card-body">
+            <h5 class="card-title">Beachin'</h5>
+            <p class="card-text">Vanaf €1999</p>
+            <a href="https://www.rayvoltbike.com/product/beachin/" target="_blank" class="btn text-light bg-red">Specificaties</a>
+          </div>
         </div>
-        <div class="card-body">
-          <h5 class="card-title">Clubman</h5>
-          <p class="card-text">Vanaf €1999</p>
-          <a href="https://www.rayvoltbike.com/product/clubman/" target="_blank" class="btn btn-primary">Specificaties</a>
+        <!-- Ambassador -->
+        <div class="card col-lg-5 col-md-12 col-sm-12 my-3 bg-gray pt-3">
+          <div id="ambassadorCarousel" class="card-img-top carousel slide" data-ride="carousel" data-interval="false" data-touch="true">
+            <div class="carousel-inner">
+              <ol class="carousel-indicators">
+                <li data-target="#ambassadorCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#ambassadorCarousel" data-slide-to="1"></li>
+                <li data-target="#ambassadorCarousel" data-slide-to="2"></li>
+                <li data-target="#ambassadorCarousel" data-slide-to="3"></li>
+                <li data-target="#ambassadorCarousel" data-slide-to="4"></li>
+              </ol>
+              <div class="carousel-item embed-responsive embed-responsive-16by9 active">
+                <div class="embed-responsive-item">
+                  <img class="w-100" src="assets/images/bikes/ambassador/ambassador1.png" alt="Eerste foto van de Ambassador">
+                </div>
+              </div>
+              <div class="carousel-item embed-responsive embed-responsive-16by9">
+                <div class="embed-responsive-item">
+                  <img class="w-100" src="assets/images/bikes/ambassador/ambassador2.jpg" alt="Tweede foto van de Ambassador">
+                </div>
+              </div>
+              <div class="carousel-item embed-responsive embed-responsive-16by9">
+                <div class="embed-responsive-item">
+                  <img class="w-100" src="assets/images/bikes/ambassador/ambassador3.png" alt="Derde foto van de Ambassador">
+                </div>
+              </div>
+              <div class="carousel-item embed-responsive embed-responsive-16by9">
+                <div class="embed-responsive-item">
+                  <img class="w-100" src="assets/images/bikes/ambassador/ambassador4.png" alt="Vierde foto van de Ambassador">
+                </div>
+              </div>
+              <div class="carousel-item embed-responsive embed-responsive-16by9">
+                <div class="embed-responsive-item">
+                  <img class="w-100" src="assets/images/bikes/ambassador/ambassador5.png" alt="Vijfde foto van de Ambassador">
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#ambassadorCarousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#ambassadorCarousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Ambassador</h5>
+            <p class="card-text">Vanaf €3650</p>
+            <a href="https://www.rayvoltbike.com/product/ambassador/" target="_blank" class="btn text-light bg-red">Specificaties</a>
+          </div>
         </div>
       </div>
-      <!-- Cruzer -->
-      <div class="card col-lg-5 offset-lg-1 col-md-12 col-sm-12 my-3">
-        <div id="cruzerCarousel" class="card-img-top carousel slide" data-ride="carousel" data-interval="false">
-          <div class="carousel-inner">
-            <ol class="carousel-indicators">
-              <li data-target="#cruzerCarousel" data-slide-to="0" class="active"></li>
-              <li data-target="#cruzerCarousel" data-slide-to="1"></li>
-              <li data-target="#cruzerCarousel" data-slide-to="2"></li>
-              <li data-target="#cruzerCarousel" data-slide-to="3"></li>
-            </ol>
-            <div class="carousel-item active">
-              <img class="d-block w-100" src="assets/images/bikes/cruzer/cruzer1.png" alt="Eerste foto van de Cruzer">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="assets/images/bikes/cruzer/cruzer2.jpg" alt="Tweede foto van de Cruzer">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="assets/images/bikes/cruzer/cruzer3.png" alt="Derde foto van de Cruzer">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="assets/images/bikes/cruzer/cruzer4.png" alt="Vierde foto van de Cruzer">
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#cruzerCarousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#cruzerCarousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">Cruzer</h5>
-          <p class="card-text">Vanaf €2800</p>
-          <a href="https://www.rayvoltbike.com/product/cruzer/" class="btn btn-primary">Specificaties</a>
-        </div>
-      </div>
-      <!-- Torino -->
-      <div class="card col-lg-5 col-md-12 col-sm-12 my-3">
-        <div id="torinoCarousel" class="card-img-top carousel slide" data-ride="carousel" data-interval="false">
-          <div class="carousel-inner">
-            <ol class="carousel-indicators">
-              <li data-target="#torinoCarousel" data-slide-to="0" class="active"></li>
-              <li data-target="#torinoCarousel" data-slide-to="1"></li>
-              <li data-target="#torinoCarousel" data-slide-to="2"></li>
-              <li data-target="#torinoCarousel" data-slide-to="3"></li>
-            </ol>
-            <div class="carousel-item active">
-              <img class="d-block w-100" src="assets/images/bikes/torino/torino1.png" alt="Eerste foto van de Torino">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="assets/images/bikes/torino/torino2.png" alt="Tweede foto van de Torino">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="assets/images/bikes/torino/torino3.png" alt="Derde foto van de Torino">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="assets/images/bikes/torino/torino4.png" alt="Vierde foto van de Torino">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="assets/images/bikes/torino/torino5.png" alt="Vijfde foto van de Torino">
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#torinoCarousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#torinoCarousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">Torino</h5>
-          <p class="card-text">Vanaf €2850</p>
-          <a href="https://www.rayvoltbike.com/product/torino/" class="btn btn-primary">Specificaties</a>
-        </div>
-      </div>
-      <!-- Beachin' -->
-      <div class="card col-lg-5 offset-lg-1 col-md-12 col-sm-12 my-3">
-        <div id="beachinCarousel" class="card-img-top carousel slide" data-ride="carousel" data-interval="false">
-          <ol class="carousel-indicators">
-            <li data-target="#beachinCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#beachinCarousel" data-slide-to="1"></li>
-            <li data-target="#beachinCarousel" data-slide-to="2"></li>
-            <li data-target="#beachinCarousel" data-slide-to="3"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img class="d-block w-100" src="assets/images/bikes/beachin/beachin1.png" alt="Eerste foto van de Beachn'">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="assets/images/bikes/beachin/beachin2.png" alt="Tweede foto van de Beachn'">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="assets/images/bikes/beachin/beachin3.png" alt="Derde foto van de Beachn'">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="assets/images/bikes/beachin/beachin4.png" alt="Vierde foto van de Beachn'">
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#beachinCarousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#beachinCarousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">Beachin'</h5>
-          <p class="card-text">Vanaf €1999</p>
-          <a href="https://www.rayvoltbike.com/product/beachin/" class="btn btn-primary">Specificaties</a>
-        </div>
-      </div>
-      <!-- Ambassador -->
-      <div class="card col-lg-5 col-md-12 col-sm-12 my-3">
-        <div id="ambassadorCarousel" class="card-img-top carousel slide" data-ride="carousel" data-interval="false" data-touch="true">
-          <div class="carousel-inner">
-            <ol class="carousel-indicators">
-              <li data-target="#ambassadorCarousel" data-slide-to="0" class="active"></li>
-              <li data-target="#ambassadorCarousel" data-slide-to="1"></li>
-              <li data-target="#ambassadorCarousel" data-slide-to="2"></li>
-              <li data-target="#ambassadorCarousel" data-slide-to="3"></li>
-              <li data-target="#ambassadorCarousel" data-slide-to="4"></li>
-            </ol>
-            <div class="carousel-item active">
-              <img class="d-block w-100" src="assets/images/bikes/ambassador/ambassador1.png" alt="Eerste foto van de Ambassador">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="assets/images/bikes/ambassador/ambassador2.jpg" alt="Tweede foto van de Ambassador">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="assets/images/bikes/ambassador/ambassador3.png" alt="Derde foto van de Ambassador">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="assets/images/bikes/ambassador/ambassador4.png" alt="Vierde foto van de Ambassador">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="assets/images/bikes/ambassador/ambassador5.png" alt="Vijfde foto van de Ambassador">
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#ambassadorCarousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#ambassadorCarousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">Ambassador</h5>
-          <p class="card-text">Vanaf €3650</p>
-          <a href="https://www.rayvoltbike.com/product/ambassador/" target="_blank" class="btn btn-primary">Specificaties</a>
-        </div>
-      </div>
-    </div>
+    </section>
   </main>
-  <footer class="page-footer py-4 small bg-blue row w-100 m-0">
-    <div class="mb-1 text-center col-md-4 col-sm-12 col-12">©2020 E-bike adventure</div>
+  <footer class="page-footer py-4 small bg-gray row w-100 m-0">
+    <div class="mb-1 text-center col-md-4 col-sm-12 col-12">©2020 E-bike Adventure</div>
     <div class="mb-1 text-center col-md-4 col-sm-12 col-12">Bremakker 4, 3740 Bilzen</div>
     <div class="mb-1 text-center col-md-4 col-sm-12 col-12">Website gemaakt door Vic Segers</div>
     <div class="mt-3 text-center col-12">
-      <a href="https://www.facebook.com/ebikeadventure.be" target="_blank" class="mx-2">
-        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#212529">
+      <a href="https://www.facebook.com/ebikeadventure.be" target="_blank" class="mx-2 text-decoration-none">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#f8f9fa">
           <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>
         </svg>
       </a>
-      <a href="https://www.instagram.com/ebikeadventure.be/" target="_blank" class="mx-2">
-        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#212529">
+      <a href="https://www.instagram.com/ebikeadventure.be/" target="_blank" class="mx-2 text-decoration-none">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#f8f9fa">
           <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
         </svg>
       </a>
