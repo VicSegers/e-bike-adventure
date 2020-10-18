@@ -19,10 +19,10 @@ if ($_POST['email']) {//if "email" is filled out, proceed
   if ($mailcheck==FALSE) {
     echo "Invalid input";
   } else {//send email
-    $email = $_REQUEST['email'] ; 
-    $subject = $_REQUEST['subject'] ;
-    $message = $_REQUEST['message'] ;
-    mail("someone@example.com", "Subject: $subject", $message, "From: $email" );
+    $email = $_REQUEST['email']; 
+    $subject = $_REQUEST['subject'];
+    $message = $_REQUEST['message'];
+    mail("vic.segers10@gmail.com", "Subject: $subject", $message, "From: $email" );
     echo "Thank you for using our mail form";
   }
 } else {//if "email" is not filled out, display the form
