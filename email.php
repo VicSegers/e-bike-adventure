@@ -23,7 +23,8 @@ if ($_POST['email']) {//if "email" is filled out, proceed
     $subject = $_REQUEST['subject'];
     $message = $_REQUEST['message'];
     mail("vic.segers10@gmail.com", "Subject: $subject", $message, "From: $email" );
-    echo "Thank you for using our mail form";
+    echo file_get_contents(vraag/success.html);
+    // echo "Thank you for using our mail form";
   }
 } else {//if "email" is not filled out, display the form
   echo "<form method='post' action='mailform.php'>
