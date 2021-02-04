@@ -79,7 +79,7 @@ header img#banner {
   object-fit: cover;
 }
 
-h2 {
+h1,h2 {
   color: rgb(228, 7, 38);
   font-weight: 600;
 }
