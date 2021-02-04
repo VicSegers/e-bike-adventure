@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Veserveren - E-bike Adventure</title>
+  <title>Verhuur - E-bike Adventure</title>
   <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png" />
   <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png" />
   <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png" />
@@ -23,7 +23,6 @@
   <meta name="theme-color" content="#ffffff" />
   <link rel="stylesheet" id="Laila-css" href="https://fonts.googleapis.com/css?family=Laila%3A1%2C300%2C400%2C400italic%2C700&amp;ver=5.5.1" type="text/css" media="all">
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="niceDatePicker/nice-date-picker.css" />
   <link rel="stylesheet" href="styles/style.css" />
 </head>
 <body class="m-auto bg-black text-light">
@@ -55,8 +54,8 @@
       </div>
       <div class="tab-content" id="nav-tabContent">
         <div class="tab-pane fade show active" id="list-verhuur" role="tabpanel" aria-labelledby="list-verhuur-list">
-          <!-- <h5 class="text-center">Reservatie</h5> -->
-          <!-- <form class="row">
+          <h5 class="text-center">Reservatie</h5>
+          <form class="row">
             <div class="form-group required my-2 col-12 col-sm-6 col-md-6 col-lg-4">
               <label for="firstNameInput">Voornaam</label>
               <input type="text" class="form-control" id="firstNameInput" name="firstName" required />
@@ -101,30 +100,17 @@
             <div class="container my-2 d-flex justify-content-center">
               <button type="submit" class="btn bg-red text-light m-auto">Reserveren</button>
             </div>
-          </form> -->
-          <h5 class="text-center my-3">Coming soon!</h5>
-          <div class="text-center">
-            <img class="rounded w-50" src="assets/images/ambiance/hand.jpeg" />
-          </div>
+          </form>
         </div>
-        <div class="tab-pane fade" id="list-reserveren" role="tabpanel" aria-labelledby="list-reserveren-list">
-          <h5 class="text-center my-3">Coming soon!</h5>
-          <div class="text-center">
-            <img class="rounded w-50" src="assets/images/ambiance/hand.jpeg" />
-          </div>
-        </div>
-        <div class="tab-pane fade" id="list-huurvoorwaarden" role="tabpanel" aria-labelledby="list-huurvoorwaarden-list">
-          <h5 class="text-center my-3">Coming soon!</h5>
-          <div class="text-center">
-            <img class="rounded w-50" src="assets/images/ambiance/hand.jpeg" />
-          </div>
+        <div class="tab-pane fade show active text-center" id="list-huurvoorwaarden" role="tabpanel" aria-labelledby="list-huurvoorwaarden-list">
+          <h5>Huurvoorwaarden</h5>
+          <p>Voor aanvang van de e-bike tocht wordt door een van de medewerkers van E-bike Adventure de huurvoorwaarden aan u uitgereikt. De hoofdhuurder tekent het formulier namens alle deelnemers van het gezelschap. Door ondertekening verklaart de hoofdhuurder dat alle deelnemers de huurvoorwaarden van E-bike Adventure hebben ingezien en hiermee akkoord gaan.</p>
+          <h6>Borg</h6>
+          <p>De huurder betaalt voorafgaand aan de huur een borg aan de verhuurder. Deze borg bestaat uit een bedrag van € 50,- per e-bike met een maximum bedrag van €250,-.</p>
+          <a class="btn bg-red text-light m-auto" href="assets/files/verhuurcontract.pdf" download>Download verhuurcontract</a>
         </div>
       </div>
     </section>
-    <pre id="object"></pre>
-    <ul id="list">
-
-    </ul>
   </main>
   <footer class="page-footer py-4 small bg-gray row w-100 m-0">
     <div class="mb-1 text-center col-md-4 col-sm-12 col-12">©2020 E-bike Adventure</div>
@@ -144,11 +130,5 @@
     </div>
   </footer>
   <script src="bootstrap/js/bootstrap.min.js"></script>
-  <script src="niceDatePicker/nice-date-picker.js"></script>
-  <script src="scripts/calendar.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-database.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-analytics.js"></script>
-  <script src="scripts/firebase.js"></script>
 </body>
 </html>
