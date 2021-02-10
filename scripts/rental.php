@@ -16,6 +16,12 @@
     $departTime = $_REQUEST['departTime'];
     $amountBikes = $_REQUEST['amountBikes'];
 
+    $headers = "MIME-Version: 1.0" . "\r\n";
+    $headers .= "Content-type: text/html; charset=iso-8859-1" . "\r\n";
+    $headers .= "From: $email" . "\r\n" .
+    "Reply-To: $email" . "\r\n" .
+    "X-Mailer: PHP/" . phpversion();
+
     $message = 
     "Voornaam: $firstName
     Achternaam: $surname
@@ -29,7 +35,7 @@
     Aantal fietsen: $amountBikes";
 
     // mail("info@e-bikeadventure.be", "Subject: [Via website] $subject", $message, "From: $email" );
-    mail("vic.segers10@gmail.com", "Subject: [Via website] $subject", $message, "From: $email");
+    mail("vic.segers10@gmail.com", "[Via website] $subject", $message, $headers);
     echo readfile("../response/success.html")[0];
   } else {
     echo readfile("../response/error.html")[0];
