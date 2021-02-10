@@ -16,7 +16,7 @@
     $departTime = $_REQUEST['departTime'];
     $amountBikes = $_REQUEST['amountBikes'];
     $coupon = $_REQUEST['coupon'];
-    $remaks = $_REQUEST['remarks'];
+    $remarks = $_REQUEST['remarks'];
 
     $headers = "MIME-Version: 1.0" . "\r\n";
     $headers .= "Content-type: text/html; charset=iso-8859-1" . "\r\n";
@@ -25,17 +25,17 @@
     "X-Mailer: PHP/" . phpversion();
 
     $message = 
-    "Voornaam: $firstName" . "\n" .
-    "Achternaam: $surname" . "\n" .
-    "Adres: $adres" . "\n" .
-    "Postcode: $postalCode" . "\n" .
-    "Plaats: $location" . "\n" .
-    "Telefoonnummer: $phoneNumber" . "\n" .
-    "E-mailadres: $email" . "\n" .
-    "Datum: $date" . "\n" .
-    "Vertrekuur: $departTime" . "\n" .
-    "Aantal fietsen: $amountBikes" . "\n" .
-    "Cadeaubonnummer: $coupon" . "\n" .
+    "Voornaam: $firstName" . "<br />" .
+    "Achternaam: $surname" . "<br />" .
+    "Adres: $adres" . "<br />" .
+    "Postcode: $postalCode" . "<br />" .
+    "Plaats: $location" . "<br />" .
+    "Telefoonnummer: $phoneNumber" . "<br />" .
+    "E-mailadres: $email" . "<br />" .
+    "Datum: $date" . "<br />" .
+    "Vertrekuur: $departTime" . "<br />" .
+    "Aantal fietsen: $amountBikes" . "<br />" .
+    "Cadeaubonnummer: $coupon" . "<br />" .
     "Opmerkingen of vragen: $remarks";
 
     // mail("info@e-bikeadventure.be", "Subject: [Via website] $subject", $message, "From: $email" );
