@@ -65,6 +65,18 @@ body {
   overflow-x: hidden;
 }
 
+main {
+  /* header height: 86px, footer height md: 111.42px */
+  min-height: calc(100vh - 86px - 111.42px);
+}
+
+@media only screen and (max-width: 768px) {
+  main {
+    /* header height: 86px, footer height sm: 161.42px */
+    min-height: calc(100vh - 86px - 161.42px);
+  }
+}
+
 body, nav {
   max-width: 1240px;
 }
