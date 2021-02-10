@@ -25,17 +25,17 @@
     "X-Mailer: PHP/" . phpversion();
 
     $message = 
-    "Voornaam: $firstName%0A" .
-    "Achternaam: $surname%0A" .
-    "Adres: $adres%0A" .
-    "Postcode: $postalCode%0A" .
-    "Plaats: $location%0A" .
-    "Telefoonnummer: $phoneNumber%0A" .
-    "E-mailadres: $email%0A" .
-    "Datum: $date%0A" .
-    "Vertrekuur: $departTime%0A" .
-    "Aantal fietsen: $amountBikes%0A" .
-    "Cadeaubonnummer: $coupon%0A" .
+    "Voornaam: $firstName" . "\n" .
+    "Achternaam: $surname" . "\n" .
+    "Adres: $adres" . "\n" .
+    "Postcode: $postalCode" . "\n" .
+    "Plaats: $location" . "\n" .
+    "Telefoonnummer: $phoneNumber" . "\n" .
+    "E-mailadres: $email" . "\n" .
+    "Datum: $date" . "\n" .
+    "Vertrekuur: $departTime" . "\n" .
+    "Aantal fietsen: $amountBikes" . "\n" .
+    "Cadeaubonnummer: $coupon" . "\n" .
     "Opmerkingen of vragen: $remarks";
 
     // mail("info@e-bikeadventure.be", "Subject: [Via website] $subject", $message, "From: $email" );
