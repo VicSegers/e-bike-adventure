@@ -15,8 +15,7 @@
     "Reply-To: $email" . "\r\n" .
     "X-Mailer: PHP/" . phpversion();
 
-    // mail("info@e-bikeadventure.be", "Subject: [Via website] $subject", $message, "From: $email" );
-    mail("vic.segers10@gmail.com", "[Via website] $subject", $message, $headers);
+    mail("info@e-bikeadventure.be", "[Via website] $subject", $message, $headers);
     echo readfile("../response/success.html")[0];
   } else {
     echo readfile("../response/error.html")[0];
