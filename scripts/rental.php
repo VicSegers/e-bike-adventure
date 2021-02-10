@@ -30,8 +30,8 @@
 
     // mail("info@e-bikeadventure.be", "Subject: [Via website] $subject", $message, "From: $email" );
     mail("vic.segers10@gmail.com", "Subject: [Via website] $subject", $message, "From: $email");
-    echo readfile("question/success.html")[0];
+    echo readfile("response/success.html")[0];
   } else {
-    echo readfile("question/error.html")[0];
+    echo readfile("response/error.html")[0];
   }
 ?>
