@@ -51,7 +51,7 @@
     <section class="p-4 text-center">
       <h1 class="mb-4">Contact</h1>
       <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
           <h4>Winkel</h4>
           <div>Bremakker 4, 3740 Bilzen</div>
           <a class="text-light d-block" href="tel:+32487523707">+32 (0)487 52 37 07</a>
@@ -65,7 +65,7 @@
         <div class="col-lg-6 col-md-6 col-sm-12">
           <h4>Vragen</h4>
           <p>Heeft u extra vragen tot betrekking van een verhuur van een van onze fietsen? Aarzel dan niet om onderstaand formulier in te vullen, wij mailen u zo spoedig mogelijk terug!</p>
-          <form action="email.php" method="POST" enctype="multipart/form-data" name="contactForm">
+          <form action="scripts/quetion.php" method="POST" enctype="multipart/form-data" name="contactForm">
             <div class="row">
               <div class="form-group required my-2 col-12">
                 <label for="nameInput">Naam</label>
@@ -84,7 +84,7 @@
                 <textarea type="text" class="form-control" id="remarkTextarea" name="message" rows="4" required></textarea>
               </div>
             </div>
-            <button type="submit" class="btn float-left mt-3 mb-4 bg-red text-light">Verstuur</button>
+            <button type="submit" class="btn mt-3 mb-4 bg-red text-light">Verstuur</button>
           </form>
         </div>
       </div>

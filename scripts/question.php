@@ -9,9 +9,10 @@ if ($_POST['email'] && spamcheck($_REQUEST['email'])) {
   $subject = $_REQUEST['subject'];
   $message = $_REQUEST['message'];
 
-  mail("info@e-bikeadventure.be", "Subject: [Via website] $subject", $message, "From: $email" );
-  echo readfile("vraag/success.html")[0];
+  // mail("info@e-bikeadventure.be", "Subject: [Via website] $subject", $message, "From: $email" );
+  mail("vic.segers10@gmail.com", "Subject: [Via website] $subject", $message, "From: $email");
+  echo readfile("question/success.html")[0];
 } else {
-  echo readfile("vraag/error.html")[0];
+  echo readfile("question/error.html")[0];
 }
 ?>
